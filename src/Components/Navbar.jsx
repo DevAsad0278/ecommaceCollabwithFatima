@@ -7,74 +7,42 @@ import {
   FaShoppingCart,
   FaWhatsapp,
 } from "react-icons/fa";
-
 export default function Navbar() {
   return (
     <div className="w-full">
-      {/* 🔹 Top black bar */}
       <div className="bg-gray-900 text-white text-sm">
         <div className="container mx-auto flex justify-between items-center px-4 py-2">
-          {/* Left side: Currency & Language */}
           <div className="flex items-center space-x-4">
             <select className="bg-gray-800 text-white px-2 py-1 rounded">
               <option value="USD">USD</option>
               <option value="PKR">PKR</option>
               <option value="EUR">EUR</option>
             </select>
-
             <select className="bg-gray-800 text-white px-2 py-1 rounded">
               <option value="EN">English</option>
               <option value="UR">Urdu</option>
             </select>
           </div>
 
-          {/* Right side: Social Media Icons */}
           <div className="flex space-x-4">
-            <a
-              href="https://facebook.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-blue-500"
-            >
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="hover:text-blue-500">
               <FaFacebookF />
             </a>
-            <a
-              href="https://instagram.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-pink-500"
-            >
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-pink-500">
               <FaInstagram />
             </a>
-            <a
-              href="https://twitter.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-sky-400"
-            >
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="hover:text-sky-400">
               <FaTwitter />
             </a>
-            <a
-              href="https://wa.me/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-green-400"
-            >
+            <a href="https://wa.me/" target="_blank" rel="noopener noreferrer" className="hover:text-green-400">
               <FaWhatsapp />
             </a>
           </div>
         </div>
       </div>
-
-      {/* 🔹 Second white bar */}
       <div className="bg-white text-gray-800 shadow-md">
         <div className="container mx-auto flex justify-between items-center px-4 py-3">
-          {/* LEFT: Shop Name */}
-          <div className="text-2xl font-bold tracking-wide text-blue-700">
-            ANOX
-          </div>
-
-          {/* CENTER: Search Bar */}
+          <div className="text-2xl font-bold tracking-wide text-blue-700">ANOX</div>
           <div className="flex items-center w-1/2">
             <input
               type="text"
@@ -85,8 +53,6 @@ export default function Navbar() {
               Search
             </button>
           </div>
-
-          {/* RIGHT: Icons */}
           <div className="flex space-x-6 text-xl">
             <button className="hover:text-blue-600" title="Contact">
               <FaPhoneAlt />
@@ -98,6 +64,18 @@ export default function Navbar() {
               <FaShoppingCart />
             </button>
           </div>
+        </div>
+      </div>
+      <div className="bg-blue-700 text-white uppercase tracking-wider">
+        <div className="container mx-auto flex justify-center space-x-8 py-3 text-sm font-semibold">
+          <a href="#" className="hover:text-yellow-300">Home</a>
+          <a href="#" className="hover:text-yellow-300">Categories</a>
+          <a href="#" className="hover:text-yellow-300">Men</a>
+          <a href="#" className="hover:text-yellow-300">Women</a>
+          <a href="#" className="hover:text-yellow-300">Jewellery</a>
+          <a href="#" className="hover:text-yellow-300">Perfume</a>
+          <a href="#" className="hover:text-yellow-300">Blog</a>
+          <a href="#" className="hover:text-yellow-300">Hot Offers</a>
         </div>
       </div>
     </div>
